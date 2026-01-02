@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Next Level Software Solutions LLC</title>
+  <meta name="description" content="Hands-on software consulting for building, modernizing, and integrating reliable systems." />
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <a class="brand" href="#top" aria-label="Next Level Software Solutions LLC">
+        <div class="brand__mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="brand__text">
+          <div class="brand__name">Next Level</div>
+          <div class="brand__sub">Software Solutions LLC</div>
+        </div>
+      </a>
+
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <h1>Software Consulting &amp; Technical Solutions</h1>
+          <p class="lead">
+            Hands-on engineering support for building, modernizing, and integrating reliable systems.
+          </p>
+
+          <div class="cta">
+            <a class="btn btn--primary" href="mailto:michael@nextlevelsoftwaresolutions.com">Contact</a>
+            <a class="btn btn--ghost" href="tel:+16617556602">(661) 755-6602</a>
+          </div>
+
+          <div class="meta">
+            <span class="pill">Santa Clarita, CA</span>
+            <span class="pill">nextlevelsoftwaresolutions.com</span>
+          </div>
+        </div>
+
+        <div class="hero__card" role="presentation">
+          <div class="card">
+            <div class="card__title">Michael Jackson</div>
+            <div class="card__role">Software Consultant</div>
+
+            <div class="card__lines">
+              <a class="card__line" href="tel:+16617556602">
+                <span class="icon" aria-hidden="true">☎</span>
+                <span>(661) 755-6602</span>
+              </a>
+              <a class="card__line" href="mailto:michael@nextlevelsoftwaresolutions.com">
+                <span class="icon" aria-hidden="true">✉</span>
+                <span>michael@nextlevelsoftwaresolutions.com</span>
+              </a>
+              <div class="card__line">
+                <span class="icon" aria-hidden="true">⌂</span>
+                <span>Santa Clarita, CA</span>
+              </div>
+              <a class="card__line" href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">
+                <span class="icon" aria-hidden="true">🌐</span>
+                <span>nextlevelsoftwaresolutions.com</span>
+              </a>
+            </div>
+
+            <div class="card__hint">
+              Direct engagement • Clear scope • Security- and reliability-first
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <a href="#services" aria-label="Scroll to content">↓</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+      <div class="container">
+        <h2>What I Do</h2>
+        <div class="grid">
+          <div class="panel">
+            <h3>Core Services</h3>
+            <ul>
+              <li>Software consulting and architecture</li>
+              <li>System integration and modernization</li>
+              <li>Data automation and workflow improvement</li>
+              <li>Troubleshooting, performance, and reliability fixes</li>
+              <li>Clear documentation and practical handoff</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>How I Work</h3>
+            <ul>
+              <li>Direct engagement — you work with me, not layers of staff</li>
+              <li>Clear scope, steady communication, dependable follow-through</li>
+              <li>Security- and reliability-first mindset</li>
+              <li>Solutions built for maintainability, not short-term hacks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>About</h2>
+        <p class="body">
+          Next Level Software Solutions LLC provides focused, hands-on software consulting for organizations that need
+          practical solutions and measurable outcomes. I partner with teams to design, build, and improve systems that are
+          dependable, maintainable, and aligned with real business needs.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="contact">
+          <div class="contact__left">
+            <div class="contact__name">Michael Jackson</div>
+            <div class="contact__role">Software Consultant</div>
+            <div class="contact__location">Santa Clarita, CA</div>
+          </div>
+
+          <div class="contact__right">
+            <a class="contact__item" href="mailto:michael@nextlevelsoftwaresolutions.com">
+              <span class="icon" aria-hidden="true">✉</span>
+              <span>michael@nextlevelsoftwaresolutions.com</span>
+            </a>
+            <a class="contact__item" href="tel:+16617556602">
+              <span class="icon" aria-hidden="true">☎</span>
+              <span>(661) 755-6602</span>
+            </a>
+            <a class="contact__item" href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">
+              <span class="icon" aria-hidden="true">🌐</span>
+              <span>nextlevelsoftwaresolutions.com</span>
+            </a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div>© <span id="year"></span> Next Level Software Solutions LLC</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
