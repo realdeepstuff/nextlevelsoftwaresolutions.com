@@ -332,14 +332,14 @@ h3{ margin:0 0 12px; font-size:18px; }
   background: rgba(255,255,255,.03);
   padding:18px;
   position:relative;
-  overflow:hidden;
+  overflow:visible;
 }
 
 .panel::after{
   content:"";
   position:absolute;
-  right:-18px;
-  bottom:-18px;
+  right:-12px;
+  bottom:-12px;
   width:96px;
   height:96px;
   background: url("assets/logo-mark.png") center / 46px auto no-repeat;
