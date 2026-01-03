@@ -91,29 +91,29 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
 .brand { gap: 12px; }
 
 .brand__mark{
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
   overflow: hidden;
 }
 
 .brand__mark img{
-  width: 30px !important;
-  height: auto !important;
-  display: block;
+  width: 40px;
+  height: auto;
 }
 
-/* Scale text to match */
 .brand__name{
-  font-size: 16px !important;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 1.05;
+  letter-spacing: 0.2px;
 }
 
 .brand__sub{
-  font-size: 13px !important;
-  margin-top: 2px;
+  font-size: 14px;
+  margin-top: 3px;
+  color: var(--muted);
 }
-
 
 
 .hero__grid{
@@ -125,10 +125,10 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
 }
 
 .hero__copy h1{
-  margin:0 0 10px;
-  font-size: clamp(30px, 3.4vw, 48px);
-  line-height:1.10;
-  letter-spacing:-.02em;
+  margin: 0 0 12px;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
 }
 
 .lead{
