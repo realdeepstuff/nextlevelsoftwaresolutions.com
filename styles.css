@@ -102,14 +102,14 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
 }
 
 .brand__mark{
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   border-radius: 14px;
   flex: 0 0 auto;
 }
 
 .brand__mark img{
-  width: 44px;
+  width: 52px;
   height: auto;
   display:block;
 }
@@ -126,6 +126,7 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   font-weight: 800;
   letter-spacing: -0.01em;
   line-height: 1.05;
+  text-shadow: 0 8px 22px rgba(0,0,0,.25);
 }
 
 .brand__sub{
@@ -148,7 +149,7 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   font-size: clamp(23px, 2.6vw, 34px);
   font-weight: 500;
   line-height: 1.18;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   color: rgba(255,255,255,.92);
   max-width: 22ch;
 }
@@ -210,8 +211,8 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   align-items:baseline;
   padding:10px 12px;
   border-radius:14px;
-  border:1px solid rgba(255,255,255,.06);
-  background: rgba(0,0,0,.10);
+  border:1px solid rgba(255,255,255,.05);
+  background: rgba(0,0,0,.085);
   backdrop-filter: blur(10px);
 }
 
