@@ -88,8 +88,13 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
 }
 
 /* Hard-lock brand sizing so it can't get weird */
-.brand { gap: 12px; }
-
+/* Brand layout: logo + "Next Level" on same line, subtitle below */
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+}
 .brand__mark{
   width: 52px;
   height: 52px;
@@ -102,17 +107,26 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   height: auto;
 }
 
-.brand__name{
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: 0.2px;
+
+
+.brand__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+/* Make sure "Next Level" reads as the main line */
+.brand__name{
+  display: block;
+  line-height: 1.0;
+  margin: 0;
+}
+
+/* Subtitle sits directly under "Next Level" */
 .brand__sub{
-  font-size: 14px;
+  display: block;
+  line-height: 1.15;
   margin-top: 3px;
-  color: var(--muted);
 }
 
 
