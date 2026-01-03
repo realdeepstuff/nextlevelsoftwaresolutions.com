@@ -87,27 +87,35 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   width: 100%;
 }
 
-/* Hard-lock brand sizing so it can't get weird */
-/* Brand layout: logo + "Next Level" on same line, subtitle below */
 .brand{
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display:flex;
+  align-items:center;
+  gap:14px;
   padding: 12px 14px;
+  max-width: 520px;          /* gives it presence */
 }
+
 .brand__mark{
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: 14px;
-  overflow: hidden;
 }
 
 .brand__mark img{
-  width: 40px;
-  height: auto;
+  width: 44px;
 }
 
+.brand__name{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.05;
+}
 
+.brand__sub{
+  font-size: 15px;
+  line-height: 1.15;
+  margin-top: 4px;
+}
 
 .brand__text{
   display: flex;
@@ -115,19 +123,6 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   justify-content: center;
 }
 
-/* Make sure "Next Level" reads as the main line */
-.brand__name{
-  display: block;
-  line-height: 1.0;
-  margin: 0;
-}
-
-/* Subtitle sits directly under "Next Level" */
-.brand__sub{
-  display: block;
-  line-height: 1.15;
-  margin-top: 3px;
-}
 
 
 .hero__grid{
@@ -139,10 +134,8 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
 }
 
 .hero__copy h1{
-  margin: 0 0 12px;
-  font-size: clamp(26px, 3vw, 40px);
-  line-height: 1.15;
-  letter-spacing: -0.015em;
+  font-weight: 600;
+  color: rgba(255,255,255,.92);
 }
 
 .lead{
