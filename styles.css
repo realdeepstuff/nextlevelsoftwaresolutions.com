@@ -78,7 +78,12 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   opacity:.70;
 }
 
-.hero__content{ position:relative; width:100%; }
+.hero__content {
+  position: relative;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
 /* Hard-lock brand sizing so it can't get weird */
 .brand { gap: 12px; }
