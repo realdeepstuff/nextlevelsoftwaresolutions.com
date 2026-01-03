@@ -98,7 +98,7 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
   align-items:center;
   gap:14px;
   padding: 12px 14px;
-  max-width: 520px;
+  max-width: 640px;
 }
 
 .brand__mark{
@@ -123,7 +123,8 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
 
 .brand__name{
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.01em;
   line-height: 1.05;
 }
 
@@ -144,14 +145,16 @@ a:hover{ text-decoration:underline; text-decoration-color: rgba(255,255,255,.35)
 
 .hero__copy h1{
   margin: 0 0 12px;
-  font-size: clamp(24px, 2.8vw, 36px);
+  font-size: clamp(23px, 2.6vw, 34px);
+  font-weight: 500;
   line-height: 1.18;
   letter-spacing: -0.01em;
-  font-weight: 600;
   color: rgba(255,255,255,.92);
   max-width: 22ch;
 }
-
+.hero__copy{
+  margin-top: 6px;
+}
 .lead{
   margin:0 0 18px;
   color:var(--muted);
