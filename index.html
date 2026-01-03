@@ -10,7 +10,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -23,7 +22,9 @@
 
     <div class="container hero__content">
       <a class="brand" href="#top" aria-label="Next Level Software Solutions LLC">
-        <img class="brand__mark" src="assets/logo-mark.png" alt="Next Level logo mark" />
+        <div class="brand__mark" aria-hidden="true">
+          <img src="assets/logo-mark.png" alt="" />
+        </div>
         <div class="brand__text">
           <div class="brand__name">Next Level</div>
           <div class="brand__sub">Software Solutions LLC</div>
@@ -38,13 +39,15 @@
           </p>
 
           <div class="cta">
-            <a class="btn btn--primary" href="mailto:michael@nextlevelsoftwaresolutions.com">Email</a>
-            <a class="btn btn--ghost" href="tel:+16617556602">Call</a>
+            <a class="btn btn--primary" href="#contact">Contact</a>
+            <a class="btn btn--ghost" href="#skills">Key Skills</a>
           </div>
 
-          <div class="meta">
-            <div><strong>Santa Clarita, CA</strong></div>
-            <div><a class="link" href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">nextlevelsoftwaresolutions.com</a></div>
+          <div class="meta-lines">
+            <div class="meta-line"><span class="meta-k">Location</span><span class="meta-v">Santa Clarita, CA</span></div>
+            <div class="meta-line"><span class="meta-k">Email</span><span class="meta-v"><a href="mailto:michael@nextlevelsoftwaresolutions.com">michael@nextlevelsoftwaresolutions.com</a></span></div>
+            <div class="meta-line"><span class="meta-k">Phone</span><span class="meta-v"><a href="tel:+16617556602">(661) 755-6602</a></span></div>
+            <div class="meta-line"><span class="meta-k">Web</span><span class="meta-v"><a href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">nextlevelsoftwaresolutions.com</a></span></div>
           </div>
         </div>
 
@@ -54,20 +57,58 @@
             <div class="card__role">Software Consultant</div>
 
             <div class="card__lines">
-              <div class="line"><span class="label">Phone</span><a class="link" href="tel:+16617556602">(661) 755-6602</a></div>
-              <div class="line"><span class="label">Email</span><a class="link" href="mailto:michael@nextlevelsoftwaresolutions.com">michael@nextlevelsoftwaresolutions.com</a></div>
-              <div class="line"><span class="label">Location</span><span>Santa Clarita, CA</span></div>
-              <div class="line"><span class="label">Web</span><a class="link" href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">nextlevelsoftwaresolutions.com</a></div>
+              <a class="card__line" href="tel:+16617556602">
+                <span class="icon" aria-hidden="true">☎</span>
+                <span>(661) 755-6602</span>
+              </a>
+              <a class="card__line" href="mailto:michael@nextlevelsoftwaresolutions.com">
+                <span class="icon" aria-hidden="true">✉</span>
+                <span>michael@nextlevelsoftwaresolutions.com</span>
+              </a>
+              <div class="card__line">
+                <span class="icon" aria-hidden="true">⌂</span>
+                <span>Santa Clarita, CA</span>
+              </div>
+              <a class="card__line" href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">
+                <span class="icon" aria-hidden="true">🌐</span>
+                <span>nextlevelsoftwaresolutions.com</span>
+              </a>
             </div>
 
-            <div class="card__hint">Direct engagement • Clear scope • Security- and reliability-first</div>
+            <div class="card__hint">
+              Direct engagement • Clear scope • Security- and reliability-first
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="scroll-hint">
+        <a href="#skills" aria-label="Scroll to content">↓</a>
       </div>
     </div>
   </header>
 
   <main>
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2>Key Skills</h2>
+        <p class="body">
+          A practical blend of ERP, integration, and full-stack engineering — focused on reliability, performance, and clean handoff.
+        </p>
+
+        <div class="chips" aria-label="Key skills list">
+          <span class="chip">Epicor ERP</span>
+          <span class="chip">BAQs &amp; Dashboards</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">C# / .NET</span>
+          <span class="chip">APIs &amp; Integrations</span>
+          <span class="chip">Automation</span>
+          <span class="chip">Reporting</span>
+          <span class="chip">Security-minded design</span>
+        </div>
+      </div>
+    </section>
+
     <section id="services" class="section">
       <div class="container">
         <h2>What I Do</h2>
@@ -76,9 +117,9 @@
             <h3>Core Services</h3>
             <ul>
               <li>Software consulting and architecture</li>
-              <li>System integration and modernization</li>
+              <li>ERP and business system integration</li>
               <li>Data automation and workflow improvement</li>
-              <li>Troubleshooting, performance, reliability</li>
+              <li>Troubleshooting, performance, and reliability fixes</li>
               <li>Clear documentation and practical handoff</li>
             </ul>
           </div>
@@ -89,30 +130,54 @@
               <li>Direct engagement — you work with me, not layers of staff</li>
               <li>Clear scope, steady communication, dependable follow-through</li>
               <li>Security- and reliability-first mindset</li>
-              <li>Maintainable solutions (no fragile hacks)</li>
+              <li>Solutions built for maintainability, not short-term hacks</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="contact">
+    <section class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p class="body">
+          Next Level Software Solutions LLC provides focused, hands-on software consulting for organizations that need
+          practical solutions and measurable outcomes. I partner with teams to design, build, and improve systems that are
+          dependable, maintainable, and aligned with real business needs.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
+
         <div class="contact">
-          <div>
+          <div class="contact__left">
             <div class="contact__name">Michael Jackson</div>
             <div class="contact__role">Software Consultant</div>
             <div class="contact__location">Santa Clarita, CA</div>
           </div>
+
           <div class="contact__right">
-            <a class="contact__item" href="mailto:michael@nextlevelsoftwaresolutions.com">michael@nextlevelsoftwaresolutions.com</a>
-            <a class="contact__item" href="tel:+16617556602">(661) 755-6602</a>
-            <a class="contact__item" href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">nextlevelsoftwaresolutions.com</a>
+            <a class="contact__item" href="mailto:michael@nextlevelsoftwaresolutions.com">
+              <span class="icon" aria-hidden="true">✉</span>
+              <span>michael@nextlevelsoftwaresolutions.com</span>
+            </a>
+            <a class="contact__item" href="tel:+16617556602">
+              <span class="icon" aria-hidden="true">☎</span>
+              <span>(661) 755-6602</span>
+            </a>
+            <a class="contact__item" href="https://nextlevelsoftwaresolutions.com" target="_blank" rel="noreferrer">
+              <span class="icon" aria-hidden="true">🌐</span>
+              <span>nextlevelsoftwaresolutions.com</span>
+            </a>
           </div>
         </div>
 
-        <footer class="footer">© <span id="year"></span> Next Level Software Solutions LLC</footer>
+        <footer class="footer">
+          <div>© <span id="year"></span> Next Level Software Solutions LLC</div>
+        </footer>
       </div>
     </section>
   </main>
